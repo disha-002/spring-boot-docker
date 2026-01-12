@@ -38,7 +38,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ubuntu
-          key: ${{ secrets.secrets.SSH_PRIVATE_KEY_EC2 }}
+          key: ${{ secrets.SSH_PRIVATE_KEY_EC2 }}
           script: |
             docker compose pull 
             docker compose up -d --force-recreate
